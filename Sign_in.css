@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #f9d6d6, #dd3a3a, rgb(40, 38, 38));
+    background: linear-gradient(to right,  #b10d0d 60%, rgb(40, 38, 38));
     color: black;
 }
 
@@ -53,12 +53,12 @@ input {
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #e92b2b, #f9d6d6, #e92b2b);
+    background: black;
     border-radius: 6px;
     border: 1.5px solid rgb(50, 50, 50);
     cursor: pointer;
     font-size: 16px;
-    color: black;
+    color: white;
     font-weight: 500;
     margin-bottom: 20px;
     transition: 0.6s;
