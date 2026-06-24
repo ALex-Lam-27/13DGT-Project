@@ -309,3 +309,135 @@
   font-size: 10px;
   font-weight: bold;
 }
+
+
+@media screen and (max-width: 768px){
+
+    .nav_bar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo{
+        width: 70px;
+        margin: 0;
+    }
+
+    .navlink_container{
+        margin: 15px 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fa-circle-user{
+        margin: 0;
+    }
+
+    .Home_intro{
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 60px;
+    }
+
+    .button_container{
+        justify-content: center;
+    }
+
+    .right_container{
+        width: 100%;
+        align-items: center;
+    }
+
+    .info_box{
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .quick-links{
+        padding: 60px 20px;
+    }
+
+    .quick-links h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 25px;
+    }
+
+    .quick-card{
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .slider{
+        width: 95%;
+        height: 220px;
+        margin: 40px auto;
+    }
+
+    .prev,
+    .next{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left{
+        margin-left: 0;
+    }
+
+    .footer-right img{
+        width: 180px;
+        margin-right: 0;
+    }
+
+    .copyright{
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1440px){
+
+    .Home_intro{
+        padding: 150px 12%;
+    }
+
+    .navlink_container{
+        margin-left: 350px;
+        gap: 180px;
+    }
+
+    .info_box{
+        width: 420px;
+    }
+
+    .quick-links h2{
+        font-size: 36px;
+    }
+
+    .card-container{
+        justify-content: space-evenly;
+    }
+
+    .slider{
+        max-width: 1400px;
+        height: 650px;
+        margin: 80px auto;
+    }
+}
