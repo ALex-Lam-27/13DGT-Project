@@ -1,0 +1,629 @@
+/* ==========================================
+   GENERAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #071c42;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+  /* NAVBAR */
+
+
+.nav_bar {
+    background: rgb(204, 204, 204);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+    margin: 10px 0px 10px 80px;
+}
+
+.navlink_container {
+    display: flex;
+    margin-left: 250px;
+    gap: 120px;
+}
+
+.navlink_container a {
+    color: black;
+    text-decoration: none;
+}
+
+.fa-solid {
+    color: black;
+    text-decoration: none;
+    margin-left: 150px;
+    font-size: 21px;
+}
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.guide-intro {
+    min-height: 330px;
+
+    padding: 60px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            110deg,
+            #050505 0%,
+            #3a0000 30%,
+            #d40000 52%,
+            #280000 75%,
+            #050505 100%
+        );
+
+    border-bottom: none;
+}
+
+
+/* SUPPORT small title */
+
+.section-label {
+    color: #ff3b3b;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+/* SCHOOL HELP GUIDE */
+
+.guide-intro h1 {
+    color: white;
+
+    font-size: 55px;
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.intro-text {
+    max-width: 570px;
+
+    color: #eeeeee;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   CARD CONTAINER
+========================================== */
+
+.help-container {
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 45px 0 20px;
+    display: grid;
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+/* ==========================================
+   NORMAL CARD
+========================================== */
+
+.help-card {
+    position: relative;
+
+    min-height: 430px;
+
+    padding: 25px 20px;
+
+    background-color: white;
+
+    border: 1px solid #e0e5eb;
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.help-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==========================================
+   CARD NUMBER
+========================================== */
+
+.card-number {
+    position: absolute;
+
+    top: 17px;
+    left: 17px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #071c42;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   ICONS
+========================================== */
+
+.icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 17px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+.red-icon {
+    background-color: #fff0f1;
+    color: #cf1e2d;
+}
+
+.blue-icon {
+    background-color: #edf5ff;
+    color: #1467b7;
+}
+
+.green-icon {
+    background-color: #edf8f0;
+    color: #08763d;
+}
+
+.orange-icon {
+    background-color: #fff4e8;
+    color: #a65a0b;
+}
+
+.yellow-icon {
+    background-color: #fff8df;
+    color: #d99600;
+}
+
+.purple-icon {
+    background-color: #f4effb;
+    color: #694597;
+}
+
+
+/* ==========================================
+   CARD TEXT
+========================================== */
+
+.help-card h2 {
+    min-height: 55px;
+
+    color: #071c42;
+
+    text-align: center;
+
+    font-size: 19px;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.title-line {
+    width: 35px;
+    height: 2px;
+
+    background-color: #e22632;
+
+    margin: 0 auto 22px;
+}
+
+.help-card > p {
+    color: #14223a;
+
+    font-size: 14px;
+    line-height: 1.45;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   WARNING
+========================================== */
+
+.warning {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 13px;
+
+    margin-top: 15px;
+
+    background-color: #fff0f0;
+
+    border: 1px solid #ffd4d6;
+    border-radius: 9px;
+
+    color: #d21f2b;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.warning i {
+    font-size: 18px;
+    margin-top: 1px;
+}
+
+
+/* ==========================================
+   WIDE CARDS
+========================================== */
+
+.wide-card {
+    grid-column: span 2;
+
+    min-height: 130px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 25px 35px;
+}
+
+.wide-card .card-number {
+    top: 17px;
+}
+
+.wide-icon {
+    flex-shrink: 0;
+
+    margin:
+        0 25px
+        0 25px;
+}
+
+.wide-content {
+    flex: 1;
+}
+
+.wide-content h2 {
+    min-height: auto;
+
+    text-align: left;
+
+    margin-bottom: 12px;
+}
+
+.wide-content p {
+    color: #14223a;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   BOTTOM HELP MESSAGE
+========================================== */
+
+.help-message {
+    width: 95%;
+    max-width: 1500px;
+
+    margin: 0 auto 35px;
+
+    padding: 13px 20px;
+
+    background-color: #edf4fc;
+
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #071c42;
+
+    font-size: 15px;
+}
+
+.help-message i {
+    font-size: 23px;
+}
+
+
+/* ==========================================
+   FOOTER
+   Same HTML structure as Support Page
+========================================== */
+
+.footer {
+    background-color: #af2828;
+    color: white;
+
+    padding: 35px 55px 20px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    margin-left: -20px;
+}
+
+.footer-left p {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 13px;
+}
+
+.footer-left i {
+    width: 28px;
+
+    font-size: 15px;
+
+    color: white;
+}
+
+.footer-left a {
+    color: white;
+
+    text-decoration: underline;
+
+    font-size: 15px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right img {
+    width: 250px;
+
+    margin-right: 100px;
+}
+
+.copyright {
+    position: absolute;
+
+    left: 18px;
+    bottom: 15px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media screen and (max-width: 1000px) {
+
+    .help-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .wide-card {
+        grid-column: span 1;
+
+        min-height: 300px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .wide-icon {
+        margin: 0 auto 20px;
+    }
+
+    .wide-content h2 {
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .footer-right img {
+        margin-right: 20px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width: 650px) {
+
+    /* NAV */
+
+    .navbar {
+        height: auto;
+
+        min-height: 70px;
+
+        padding: 12px 18px;
+
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        order: 3;
+
+        display: flex;
+        justify-content: space-between;
+
+        gap: 8px;
+
+        margin-top: 10px;
+
+        padding-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    /* INTRO */
+
+    .guide-intro {
+        padding: 45px 22px 40px;
+    }
+
+    .guide-intro h1 {
+        font-size: 38px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
+
+    /* CARDS */
+
+    .help-container {
+        width: calc(100% - 30px);
+
+        grid-template-columns: 1fr;
+
+        padding-top: 25px;
+    }
+
+    .help-card {
+        min-height: auto;
+    }
+
+    .wide-card {
+        grid-column: auto;
+
+        min-height: auto;
+
+        padding: 30px 22px;
+    }
+
+
+    /* HELP MESSAGE */
+
+    .help-message {
+        width: calc(100% - 30px);
+
+        font-size: 13px;
+
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px 20px 50px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .footer-left {
+        margin-left: 0;
+    }
+
+    .footer-right {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .footer-right img {
+        width: 200px;
+
+        margin-right: 0;
+    }
+}
