@@ -53,7 +53,7 @@ a {
     text-decoration: none;
 }
 
-.fa-solid {
+.nav_bar > a:last-child .fa-solid {
     color: black;
     text-decoration: none;
     margin-left: 150px;
@@ -133,14 +133,14 @@ a {
 ========================================== */
 
 .help-container {
-    width: 95%;
-    max-width: 1500px;
+    width: 92%;
+    max-width: 1250px;
     margin: 0 auto;
-    padding: 45px 0 20px;
+    padding: 34px 0 18px;
+
     display: grid;
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
 }
 
 
@@ -151,30 +151,22 @@ a {
 .help-card {
     position: relative;
 
-    min-height: 430px;
-
-    padding: 25px 20px;
+    min-height: 315px;
+    padding: 18px 16px 16px;
 
     background-color: white;
 
-    border: 1px solid #e0e5eb;
-    border-radius: 12px;
+    border: 2px solid black;
+    border-radius: 6px;
 
-    box-shadow:
-        0 4px 12px
-        rgba(0, 0, 0, 0.07);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.06);
 
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .help-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 25px
-        rgba(0, 0, 0, 0.10);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.09);
 }
 
 
@@ -185,22 +177,22 @@ a {
 .card-number {
     position: absolute;
 
-    top: 17px;
-    left: 17px;
+    top: 13px;
+    left: 13px;
 
-    width: 32px;
-    height: 32px;
+    width: 27px;
+    height: 27px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border-radius: 50%;
+    border-radius: 5px;
 
     background-color: #071c42;
     color: white;
 
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -210,18 +202,18 @@ a {
 ========================================== */
 
 .icon {
-    width: 80px;
-    height: 80px;
+    width: 58px;
+    height: 58px;
 
-    margin: 0 auto 17px;
+    margin: 2px auto 12px;
 
-    border-radius: 50%;
+    border-radius: 8px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .red-icon {
@@ -260,34 +252,33 @@ a {
 ========================================== */
 
 .help-card h2 {
-    min-height: 55px;
+    min-height: 42px;
 
     color: #071c42;
-
     text-align: center;
 
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.2;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .title-line {
-    width: 35px;
+    width: 30px;
     height: 2px;
 
     background-color: #e22632;
 
-    margin: 0 auto 22px;
+    margin: 0 auto 15px;
 }
 
 .help-card > p {
     color: #14223a;
 
-    font-size: 14px;
-    line-height: 1.45;
+    font-size: 13px;
+    line-height: 1.4;
 
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 
@@ -299,25 +290,25 @@ a {
     display: flex;
     align-items: flex-start;
 
-    gap: 10px;
+    gap: 7px;
 
-    padding: 13px;
+    padding: 9px;
 
-    margin-top: 15px;
+    margin-top: 10px;
 
     background-color: #fff0f0;
 
     border: 1px solid #ffd4d6;
-    border-radius: 9px;
+    border-radius: 5px;
 
     color: #d21f2b;
 
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 11px;
+    line-height: 1.35;
 }
 
 .warning i {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 1px;
 }
 
@@ -329,24 +320,22 @@ a {
 .wide-card {
     grid-column: span 2;
 
-    min-height: 130px;
+    min-height: 110px;
 
     display: flex;
     align-items: center;
 
-    padding: 25px 35px;
+    padding: 18px 25px;
 }
 
 .wide-card .card-number {
-    top: 17px;
+    top: 13px;
 }
 
 .wide-icon {
     flex-shrink: 0;
 
-    margin:
-        0 25px
-        0 25px;
+    margin: 0 20px 0 25px;
 }
 
 .wide-content {
@@ -358,14 +347,14 @@ a {
 
     text-align: left;
 
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .wide-content p {
     color: #14223a;
 
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 
@@ -436,6 +425,8 @@ a {
     font-size: 15px;
 
     color: white;
+
+    margin-left: 150px;
 }
 
 .footer-left a {
