@@ -1,26 +1,7 @@
-/* ==========================================
-   GENERAL
-========================================== */
-
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8fafc;
-    color: #071c42;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    box-sizing: border-box; 
 }
 
 
@@ -392,7 +373,6 @@ a {
 
 /* ==========================================
    FOOTER
-   Same HTML structure as Support Page
 ========================================== */
 
 .footer {

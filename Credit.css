@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+
+.nav_bar {
+    background: rgb(204, 204, 204);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+    margin: 10px 0px 10px 80px;
+}
+
+.navlink_container {
+    display: flex;
+    margin-left: 250px;
+    gap: 120px;
+}
+
+.navlink_container a {
+    color: black;
+    text-decoration: none;
+}
+
+.fa-solid {
+    color: black;
+    text-decoration: none;
+    margin-left: 150px;
+    font-size: 21px;
+}
+
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.hero {
+    background: #8d2023;
+    color: white;
+    padding: 65px 8%;
+}
+
+.hero-inner {
+    padding-top: 50px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #f5d1d1;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.hero p:last-child {
+    max-width: 630px;
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.page-content {
+    max-width: 1120px;
+    margin: 40px auto 55px;
+    padding: 0 20px;
+    display: grid;
+    gap: 22px;
+}
+
+
+/* ==========================================
+   CONTENT CARDS
+========================================== */
+
+.content-card {
+    background: white;
+    border: 1px solid #cfd6df;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #b51d27;
+    margin-bottom: 6px;
+}
+
+.content-card h2 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.content-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   NZQF TOPICS
+========================================== */
+
+.topic-list,
+.sport-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 20px 0;
+}
+
+.topic-list span,
+.sport-tags span {
+    background: #f4f6f8;
+    border: 1px solid #d9dfe7;
+    border-radius: 4px;
+    padding: 7px 11px;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   PDF DOCUMENT BOX
+========================================== */
+
+.document-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f8f9fb;
+    border: 1px solid #d5dbe3;
+    border-radius: 5px;
+    padding: 18px;
+    margin-top: 22px;
+}
+
+.document-icon {
+    background: #f9e9e9;
+    color: #b51d27;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.document-box strong,
+.document-box small {
+    display: block;
+}
+
+.document-box small {
+    color: #607087;
+    margin-top: 3px;
+}
+
+
+/* OPEN PDF BUTTON */
+
+.button {
+    background: #a9232a;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background: #811b20;
+}
+
+.button i {
+    margin-left: 6px;
+}
+
+
+/* ==========================================
+   SPORT IMAGES
+========================================== */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin: 22px 0;
+}
+
+.photo-grid figure {
+    background: #f6f7f8;
+    border: 1px solid #d5dbe3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.photo-grid img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.photo-grid figcaption {
+    font-size: 12px;
+    color: #536174;
+    padding: 9px 12px;
+}
+
+
+/* ==========================================
+   ANNUAL SPORTS
+========================================== */
+
+.subsection {
+    border-top: 1px solid #e0e5eb;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+
+/* ==========================================
+   SPORT CONTACT
+========================================== */
+
+.contact-box {
+    display: flex;
+    gap: 15px;
+    background: #f4f6f9;
+    border-left: 3px solid #b51d27;
+    padding: 18px;
+    margin-top: 24px;
+}
+
+.contact-box > i {
+    color: #b51d27;
+    margin-top: 5px;
+}
+
+.contact-box p {
+    margin: 3px 0;
+}
+
+.contact-box a {
+    color: #b51d27;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+  background-color: #af2828;
+  color: white;
+  padding: 35px 55px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+    margin-left: -20px;
+}
+
+.footer-left p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.footer-left i {
+  width: 28px;
+  font-size: 15px;
+  color: white;
+}
+
+.footer-left a {
+  color: white;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right img {
+  width: 250px;
+  margin-right: 100px;
+}
+
+.copyright {
+  position: absolute;
+  left: 18px;
+  bottom: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media screen and (max-width: 1100px) {
+
+    .nav_bar {
+        height: 75px;
+        padding: 0 4%;
+    }
+
+    .logo {
+        height: 60px;
+        width: 56px;
+    }
+
+    .navlink_container {
+        margin-left: 12%;
+        gap: clamp(22px, 5vw, 70px);
+    }
+
+    .navlink_container a {
+        font-size: 17px;
+    }
+
+    .footer {
+        padding: 35px 7% 55px;
+    }
+
+    .footer-left p {
+        font-size: 16px;
+    }
+
+    .footer-right img {
+        width: 285px;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media screen and (max-width: 750px) {
+
+    .nav_bar {
+        height: auto;
+        min-height: 72px;
+
+        padding: 8px 16px;
+
+        flex-wrap: wrap;
+    }
+
+    .navlink_container {
+        order: 3;
+
+        margin: 8px 0 0;
+
+        width: 100%;
+
+        gap: 8px;
+
+        justify-content: space-between;
+    }
+
+    .navlink_container a {
+        font-size: 14px;
+    }
+
+    .profile-link {
+        margin-left: auto;
+    }
+
+    .hero {
+        padding: 45px 22px;
+    }
+
+    .page-content {
+        margin: 25px auto 35px;
+        padding: 0 14px;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+
+    .content-card h2 {
+        font-size: 22px;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid img {
+        height: 230px;
+    }
+
+    .document-box {
+        flex-wrap: wrap;
+    }
+
+    .button {
+        margin-left: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 30px 20px 60px;
+    }
+
+    .footer-left p {
+        font-size: 14px;
+        white-space: normal;
+
+        margin-bottom: 12px;
+    }
+
+    .footer-left i {
+        width: 30px;
+        font-size: 16px;
+    }
+
+    .footer-right {
+        align-self: center;
+    }
+
+    .footer-right img {
+        width: 260px;
+    }
+
+    .copyright {
+        left: 20px;
+        bottom: 15px;
+
+        font-size: 11px;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE - SMALL MOBILE
+========================================== */
+
+@media screen and (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .content-card h2 {
+        font-size: 20px;
+    }
+
+    .topic-list span {
+        font-size: 12px;
+    }
+}

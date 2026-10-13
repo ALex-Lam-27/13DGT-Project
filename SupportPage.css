@@ -51,14 +51,11 @@ a {
 
    /* HERO */
 
-
 .hero {
     height: 330px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background:
         linear-gradient(
             110deg,
@@ -80,37 +77,28 @@ a {
 
    /* MAIN CONTENT */
 
-
 .main-content {
     width: 100%;
     padding: 55px 30px 65px;
 }
 
 
-
    /* SUPPORT CARDS */
-
 
 .support-options {
     max-width: 1200px;
     margin: 0 auto 75px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 60px;
 }
 
 .support-card {
     min-height: 120px;
-
     padding: 22px 25px;
-
     border: 1px solid #222;
     border-radius: 12px;
-
     background-color: white;
-
     transition:
         transform 0.25s,
         box-shadow 0.25s,
@@ -119,9 +107,7 @@ a {
 
 .support-card h2 {
     color: red;
-
     font-size: 18px;
-
     margin-bottom: 18px;
 }
 
@@ -133,9 +119,7 @@ a {
 
 .support-card:hover {
     transform: translateY(-5px);
-
     border-color: red;
-
     box-shadow:
         0 10px 24px
         rgba(0, 0, 0, 0.12);
@@ -164,26 +148,20 @@ a {
 .table-container {
     width: 90%;
     margin: auto;
-
     overflow-x: auto;
 }
 
 table {
     width: 100%;
-
     border-collapse: collapse;
-
     min-width: 650px;
 }
 
 th,
 td {
     border: 1px solid #555;
-
     padding: 9px 14px;
-
     font-size: 14px;
-
     text-align: center;
 }
 
@@ -207,83 +185,6 @@ td a {
 
 td a:hover {
     color: #980000;
-}
-
-
-/* -----------------------------
-   FOOTER
------------------------------- */
-
-.footer {
-    background-color: #ad2528;
-
-    color: white;
-
-    padding:
-        35px 70px
-        20px;
-}
-
-.footer-content {
-    max-width: 1200px;
-
-    margin: auto;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-}
-
-.footer-contact p {
-    margin-bottom: 16px;
-
-    font-size: 17px;
-
-    font-weight: 600;
-}
-
-.footer-contact i {
-    width: 30px;
-
-    font-size: 20px;
-}
-
-.footer-contact a {
-    color: white;
-
-    text-decoration: underline;
-}
-
-.footer-logo {
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-}
-
-.footer-logo img {
-    width: 75px;
-}
-
-.footer-logo h3 {
-    font-size: 15px;
-
-    line-height: 1.4;
-}
-
-.copyright {
-    max-width: 1200px;
-
-    margin:
-        40px auto
-        0;
-
-    font-size: 13px;
-
-    font-weight: 600;
 }
 
 /* FOOTER */

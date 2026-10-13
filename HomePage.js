@@ -45,4 +45,4 @@ document.querySelector(".next").addEventListener("click", nextSlide);
 
 document.querySelector(".prev").addEventListener("click", prevSlide);
 
-setInterval(nextSlide,4000);
+setInterval(nextSlide,6000);
