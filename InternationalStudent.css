@@ -672,3 +672,1128 @@ main {
     bottom: 14px;
     font-size: 10px;
 }
+
+
+/* ==========================================
+   LARGE SCREENS
+   ABOVE 1280px
+========================================== */
+
+@media screen and (min-width: 1281px) {
+
+    /* NAVBAR - INTERNATIONAL PAGE */
+
+    .nav_bar {
+        justify-content: space-between;
+        padding-right: clamp(30px, 5vw, 100px);
+    }
+
+    .navlink_container {
+        margin-left: clamp(100px, 15vw, 250px);
+        gap: clamp(60px, 7vw, 120px);
+    }
+
+    .profile-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: clamp(330px, 27vw, 440px);
+        padding-left: clamp(8%, 10vw, 15%);
+    }
+
+    .hero-content {
+        max-width: 850px;
+    }
+
+    .hero h1 {
+        font-size: clamp(46px, 3.8vw, 62px);
+    }
+
+    .hero-text {
+        max-width: 720px;
+        font-size: clamp(16px, 1.2vw, 19px);
+    }
+
+    /* COMMON LAYOUT */
+
+    .section-shell,
+    .quick-wrap,
+    .kamar-section {
+        width: min(1250px, calc(100% - 80px));
+    }
+
+    .content-card,
+    .feature-card {
+        padding: clamp(24px, 2vw, 32px);
+    }
+
+    /* QUICK ACCESS */
+
+    .quick-grid {
+        gap: 12px;
+    }
+
+    .quick-card {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    /* CONTACT / STAFF */
+
+    .two-column,
+    .split-layout {
+        gap: 24px;
+    }
+
+    /* ORIENTATION */
+
+    .steps-grid {
+        gap: 14px;
+    }
+
+    .step {
+        padding: 20px;
+    }
+
+    /* SUBJECTS */
+
+    .subject-layout {
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 25px;
+    }
+
+    /* HOMESTAY RESOURCES */
+
+    .resource-grid {
+        gap: 18px;
+    }
+
+    /* FOOTER - SAME RESPONSIVE AS OTHER PAGES */
+
+    .footer-right img {
+        margin-right: clamp(30px, 5vw, 100px);
+    }
+}
+
+
+/* ==========================================
+   SMALL DESKTOP
+   1025px - 1279px
+========================================== */
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+
+    /* NAVBAR - INTERNATIONAL PAGE */
+
+    .nav_bar {
+        justify-content: space-between;
+        padding: 0 35px;
+        gap: 20px;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .navlink_container {
+        margin-left: 0;
+        gap: clamp(25px, 4vw, 55px);
+    }
+
+    .profile-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 320px;
+        padding: 110px 7% 50px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 4vw, 46px);
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    /* COMMON LAYOUT */
+
+    .section-shell,
+    .quick-wrap,
+    .kamar-section {
+        width: calc(100% - 50px);
+    }
+
+    .content-card,
+    .feature-card {
+        padding: 22px;
+    }
+
+    /* QUICK ACCESS */
+
+    .quick-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .quick-card {
+        min-width: 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* CONTACT / STAFF */
+
+    .two-column,
+    .split-layout {
+        gap: 16px;
+    }
+
+    .contact-card,
+    .staff-card {
+        min-width: 0;
+    }
+
+    .contact-item a {
+        overflow-wrap: anywhere;
+    }
+
+    /* ORIENTATION */
+
+    .steps-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    /* SUBJECTS */
+
+    .subject-layout {
+        grid-template-columns: minmax(0, 1fr) 270px;
+        gap: 16px;
+    }
+
+    /* SCHOOL TIMES */
+
+    .stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* HOMESTAY RESOURCES */
+
+    .resource-card {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .resource-card > div:nth-child(2) {
+        min-width: 0;
+    }
+
+    .resource-card h3,
+    .resource-card p {
+        overflow-wrap: anywhere;
+    }
+
+    /* FOOTER - SAME RESPONSIVE AS OTHER PAGES */
+
+    .footer {
+        gap: 30px;
+    }
+
+    .footer-left i {
+        margin-left: 0;
+    }
+
+    .footer-right img {
+        width: 220px;
+        margin-right: 0;
+    }
+}
+
+
+/* ==========================================
+   TABLET
+   651px - 1024px
+========================================== */
+
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+
+    /* NAVBAR - INTERNATIONAL PAGE */
+
+    .nav_bar {
+        padding: 0 25px;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 42px;
+        margin: 10px 0;
+    }
+
+    .navlink_container {
+        margin-left: 0;
+        flex: 1;
+        min-width: 0;
+        justify-content: center;
+        gap: clamp(12px, 2.5vw, 30px);
+    }
+
+    .navlink_container a {
+        font-size: clamp(13px, 1.5vw, 15px);
+        white-space: nowrap;
+    }
+
+    .profile-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profile-link .fa-solid {
+        font-size: 20px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 310px;
+        padding: 105px 6% 45px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 5vw, 46px);
+    }
+
+    .hero-text {
+        max-width: 650px;
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        gap: 10px;
+    }
+
+    /* COMMON LAYOUT */
+
+    main {
+        padding: 20px 0 40px;
+    }
+
+    .section-shell,
+    .quick-wrap,
+    .kamar-section {
+        width: calc(100% - 40px);
+        margin-top: 20px;
+    }
+
+    .content-card,
+    .feature-card,
+    .culture-card,
+    .first-week-card {
+        padding: 22px;
+    }
+
+    .section-heading h2,
+    .card-topline h2,
+    .kamar-section h2,
+    .culture-card h2,
+    .first-week-card h2 {
+        font-size: 25px;
+    }
+
+    /* QUICK ACCESS */
+
+    .quick-wrap {
+        padding: 20px;
+    }
+
+    .quick-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .quick-card {
+        min-width: 0;
+        padding: 12px 10px;
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .quick-card i {
+        flex-shrink: 0;
+    }
+
+    /* CONTACT / STAFF */
+
+    .two-column {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .contact-card,
+    .staff-card {
+        min-width: 0;
+    }
+
+    .contact-item a {
+        overflow-wrap: anywhere;
+    }
+
+    .staff-person {
+        grid-template-columns: 42px minmax(0, 1fr);
+    }
+
+    /* ORIENTATION */
+
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .step {
+        min-height: 145px;
+        padding: 16px;
+    }
+
+    /* UNIFORM / HOUSES */
+
+    .split-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .split-layout > * {
+        min-width: 0;
+    }
+
+    .clean-list li {
+        font-size: 14px;
+    }
+
+    /* SUBJECT PLACEMENT */
+
+    .subject-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .tip-card {
+        padding: 18px;
+    }
+
+    /* SCHOOL TIMES / TIMETABLE */
+
+    .stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .time-row {
+        gap: 12px;
+    }
+
+    /* KAMAR */
+
+    .kamar-section {
+        padding: 24px;
+    }
+
+    .kamar-tags {
+        gap: 8px;
+    }
+
+    /* ATTENDANCE */
+
+    .number-list li {
+        font-size: 14px;
+    }
+
+    /* CULTURE SHOCK */
+
+    .culture-flow {
+        gap: 10px;
+    }
+
+    /* FIRST WEEK */
+
+    .first-week-card {
+        grid-template-columns: 56px minmax(0, 1fr);
+    }
+
+    /* HOMESTAY RESOURCES */
+
+    .resource-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .resource-card {
+        grid-template-columns: 38px minmax(0, 1fr);
+        padding: 15px;
+    }
+
+    .resource-card > div:nth-child(2) {
+        min-width: 0;
+    }
+
+    .resource-card h3 {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .resource-card p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    /* FOOTER - SAME RESPONSIVE AS OTHER PAGES */
+
+    .footer {
+        padding: 30px 25px 45px;
+        gap: 20px;
+    }
+
+    .footer-left {
+        margin-left: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .footer-left p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .footer-left i {
+        width: 22px;
+        margin-left: 0;
+    }
+
+    .footer-left a {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-right {
+        flex: 0 1 200px;
+        min-width: 0;
+    }
+
+    .footer-right img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .copyright {
+        left: 25px;
+        bottom: 12px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   650px AND BELOW
+========================================== */
+
+@media screen and (max-width: 650px) {
+
+    /* NAVBAR - INTERNATIONAL PAGE */
+
+    .nav_bar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        width: 100%;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .logo_a {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .logo {
+        width: 40px;
+        margin: 0;
+    }
+
+    .profile-link {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .profile-link .fa-solid {
+        font-size: 22px;
+    }
+
+    .navlink_container {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding-top: 10px;
+        border-top: 1px solid #aaa;
+    }
+
+    .navlink_container a {
+        font-size: clamp(11px, 2.8vw, 15px);
+        white-space: nowrap;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 340px;
+        padding: 140px 20px 40px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero .eyebrow {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: clamp(30px, 7vw, 40px);
+        line-height: 1.15;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+    /* COMMON LAYOUT */
+
+    main {
+        padding: 15px 0 30px;
+    }
+
+    .section-shell,
+    .quick-wrap,
+    .kamar-section {
+        width: calc(100% - 30px);
+        margin-top: 18px;
+    }
+
+    .content-card,
+    .feature-card,
+    .culture-card,
+    .first-week-card {
+        min-width: 0;
+        padding: 18px;
+    }
+
+    .section-heading h2,
+    .card-topline h2,
+    .kamar-section h2,
+    .culture-card h2,
+    .first-week-card h2 {
+        font-size: clamp(21px, 5.5vw, 26px);
+    }
+
+    .section-heading {
+        margin-bottom: 16px;
+    }
+
+    .section-kicker {
+        font-size: 11px;
+    }
+
+    /* QUICK ACCESS */
+
+    .quick-wrap {
+        padding: 16px;
+    }
+
+    .quick-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .quick-card {
+        min-width: 0;
+        min-height: 55px;
+        padding: 10px;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .quick-card span {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .quick-card i {
+        flex-shrink: 0;
+        font-size: 14px;
+    }
+
+    /* CONTACT / STAFF */
+
+    .two-column {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .card-topline {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .card-topline > div:last-child {
+        min-width: 0;
+    }
+
+    .section-icon {
+        flex-shrink: 0;
+    }
+
+    .contact-card,
+    .staff-card {
+        min-width: 0;
+    }
+
+    .contact-item a,
+    .contact-item p {
+        overflow-wrap: anywhere;
+    }
+
+    .staff-person {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .staff-person p {
+        overflow-wrap: anywhere;
+    }
+
+    .info-strip {
+        padding: 12px;
+    }
+
+    /* ORIENTATION */
+
+    .steps-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .step {
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .step h3 {
+        font-size: 16px;
+    }
+
+    .step p {
+        font-size: 13px;
+    }
+
+    /* UNIFORM / HOUSES */
+
+    .split-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .split-layout > * {
+        min-width: 0;
+    }
+
+    .clean-list li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .house {
+        grid-template-columns: 18px minmax(0, 1fr) auto;
+        gap: 8px;
+    }
+
+    /* SUBJECT PLACEMENT */
+
+    .subject-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .subject-main,
+    .tip-card {
+        min-width: 0;
+    }
+
+    .tip-card {
+        padding: 15px;
+    }
+
+    /* SCHOOL TIMES / TIMETABLE */
+
+    .stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .stat {
+        min-width: 0;
+        padding: 12px 6px;
+    }
+
+    .stat strong {
+        font-size: 21px;
+    }
+
+    .stat span {
+        font-size: 11px;
+    }
+
+    .time-row {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .time-row span {
+        flex-shrink: 0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .time-row p {
+        font-size: 13px;
+        text-align: right;
+    }
+
+    /* KAMAR */
+
+    .kamar-section {
+        padding: 20px;
+    }
+
+    .kamar-icon {
+        font-size: 26px;
+    }
+
+    .kamar-tags {
+        gap: 7px;
+    }
+
+    .kamar-tags span {
+        font-size: 11px;
+    }
+
+    .kamar-note {
+        padding: 12px;
+    }
+
+    /* ATTENDANCE */
+
+    .number-list li {
+        padding-left: 32px;
+        font-size: 14px;
+    }
+
+    /* CULTURE SHOCK */
+
+    .culture-flow {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .culture-flow > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+        border: 1px solid #d8dde2;
+        border-radius: 4px;
+    }
+
+    .culture-flow > i {
+        align-self: center;
+        transform: rotate(90deg);
+    }
+
+    /* FIRST WEEK */
+
+    .first-week-card {
+        grid-template-columns: 45px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .first-week-number {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    /* HOMESTAY RESOURCES */
+
+    .resource-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .resource-card {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .resource-card > div:nth-child(2) {
+        min-width: 0;
+    }
+
+    .resource-card h3 {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .resource-card p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    /* FOOTER - SAME RESPONSIVE AS OTHER PAGES */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 30px 20px 55px;
+        gap: 25px;
+    }
+
+    .footer-left {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+    }
+
+    .footer-left p {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .footer-left i {
+        width: 20px;
+        min-width: 20px;
+        margin-left: 0;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .footer-left a {
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-right img {
+        width: 210px;
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .copyright {
+        left: 20px;
+        bottom: 15px;
+        font-size: 10px;
+    }
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+   359px AND BELOW
+========================================== */
+
+@media screen and (max-width: 359px) {
+
+    /* NAVBAR - INTERNATIONAL PAGE */
+
+    .nav_bar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo {
+        width: 35px;
+    }
+
+    .navlink_container {
+        gap: 3px;
+    }
+
+    .navlink_container a {
+        font-size: 11px;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 135px 15px 35px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-text {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 11px;
+    }
+
+    /* COMMON LAYOUT */
+
+    .section-shell,
+    .quick-wrap,
+    .kamar-section {
+        width: calc(100% - 20px);
+    }
+
+    .content-card,
+    .feature-card,
+    .culture-card,
+    .first-week-card {
+        padding: 14px;
+    }
+
+    .section-heading h2,
+    .card-topline h2,
+    .kamar-section h2,
+    .culture-card h2,
+    .first-week-card h2 {
+        font-size: 20px;
+    }
+
+    /* QUICK ACCESS */
+
+    .quick-wrap {
+        padding: 12px;
+    }
+
+    .quick-grid {
+        gap: 7px;
+    }
+
+    .quick-card {
+        padding: 9px 7px;
+        font-size: 11px;
+    }
+
+    /* CONTACT / STAFF */
+
+    .contact-item a {
+        font-size: 13px;
+    }
+
+    .staff-person {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 9px;
+    }
+
+    .staff-badge {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* SCHOOL TIMES */
+
+    .stat-grid {
+        gap: 6px;
+    }
+
+    .stat {
+        padding: 10px 5px;
+    }
+
+    /* FIRST WEEK */
+
+    .first-week-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* HOMESTAY RESOURCES */
+
+    .resource-card {
+        padding: 12px;
+    }
+
+    /* FOOTER - SAME RESPONSIVE AS OTHER PAGES */
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-left a {
+        font-size: 12px;
+    }
+
+    .footer-right img {
+        width: 180px;
+    }
+
+    .copyright {
+        left: 15px;
+    }
+}
